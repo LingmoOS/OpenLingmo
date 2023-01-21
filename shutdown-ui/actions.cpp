@@ -60,6 +60,7 @@ void Actions::reboot()
 void Actions::lockScreen()
 {
     QProcess::startDetached("cute-screenlocker", QStringList());
+    
     qApp->exit(0);
 }
 
